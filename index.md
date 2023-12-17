@@ -23,7 +23,7 @@ To understand the impact of a famous cast, we first need to define what is fame.
 
 As the data we have for fame levels is actual, more recent casts should be more likely to be famous, so one could say that analysing the impact of fame wouldn’t make sense. Yet recent movies have not better ratings than old movies, we can clearly see a downward trend in average ratings over time. Not only that, but average cast fame is fairly stable after 1930’s, which let us conclude that we can interpret the effect of the fame of different casts during different periods similarly.
 
-{% include genre_distribution.html %}
+{% include interactive_fame.html %}
 
 Where does this show up?
 

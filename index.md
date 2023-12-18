@@ -72,7 +72,10 @@ To check for causality and not only correlation between ratings and revenues, we
 
 {% include fin_revenue_paired_years.html %}
 
-### Conclusion of financial analysis
+### Results of financial analysis
 
 - Data shows clear signs that creating a movie that receives good ratings is also highly likely to perform well financially and therefore reward cast and directors
 
+
+## Conclusion
+??? Let's seeeeee

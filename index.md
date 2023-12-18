@@ -36,33 +36,43 @@ hallo this workds
 ## Network Analysis
 Part from Emma and Tim
 
+## Financial analysis
 
-## Financial Analysis
 The whole time we focussed on ratings as the main metric. But what about money? Is there any link between movie ratings and their financial success? Can we claim that actor fame also influences a movie's revenue potential? Let's have a look!
 
 ### Inital Exploration
 
-To start with, we combined the ADA movies dataset (link) with the budget dataset and to get a cleaned dataset where each movie has renvenue and budget data.
+To start with, we combined the ADA movies dataset (link) with the budget dataset (link) and to get a cleaned dataset where each movie has renvenue and budget data. Afterwards we adjusted them for inflation  with our CPI data (link), to consider the time aspect of the dataset.
+
+Let's first have a look at our data distribution over the years. Which movies surprise you the most when looking at it's rating or revenue?
 
 {% include fin_first_viz.html %}
 
 ### Correlation & Regression Analysis
-There is correlation
+- Pearson correlation is 0.23622, so small positive correlation between higher ratings and higher revenues.
+- Let's try to explain relationship of ratings as the independant predictor variable and revenues as the dependant output with linear regression: coef is 7e07, so on average with every additional rating point the movie is making $ 70,000,000 more in revenue.
+- The same holds true when adding budget as an independant predictor, proving ratings to be the dominant predictor
 
 {% include fin_lin_reg.html %}
 
 ### Quartiles Analysis
-Quartiles for everything
-
+- Splitting up the data in rating quartiles (0.25    5.9; 0.50    6.5; 0.75    7.1) and displaying their boxplots also shows trend of movies with higher ratings having higher revenues.
 {% include fin_quartiles_box.html %}
 
 ### Checking causation
-Pair matching here
+To check for causality and not only correlation between ratings and revenues, we calculated the propensity score for all data points, utilizing budget and year as potential cofounders on the effect of ratings on revenue. We then defined the treshhold for having a high rating the 0.75 quantile. As a result we got the treated group (having a high rating) and the control group (having a not high, i.e. low rating). We then paired matched the datapoints on the propensity score. The consequent average revenues of the treatment group and the control group are XXX and XXX, clearly showing that the group with higher ratings have higher revenues.
+
+- plotted average revenue of treatment and control group and their 95% CI
 
 {% include fin_revenue_paired.html %}
 
-Distribution over years
+- Conducted T-test to check if difference between treatment and control group is statistically significant. Results show it is.
+
+- Lastly show difference between treatment and control group over years. Treatment group has higher revenues in 88% of the years.
 
 {% include fin_revenue_paired_years.html %}
 
+### Conclusion of financial analysis
+
+- Data shows clear signs that creating a movie that receives good ratings is also highly likely to perform well financially and therefore reward cast and directors
 

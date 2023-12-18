@@ -28,7 +28,6 @@ Where does this show up?
 
 {% include genre_distribution.html %}
 
-
 hallo this workds
 
 {% include interactive_genre_subplots.html %}

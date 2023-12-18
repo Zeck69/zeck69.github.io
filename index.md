@@ -4,8 +4,7 @@ title: Shine bright like adamon
 subtitle: Our datastory
 ---
 
-# Title: ...
-How does actor fame influence movie rating?
+# How does actor fame influence movie rating?
 - fame in terms of awards, online popularity and connections between actors
 
 
@@ -42,23 +41,23 @@ Part from Emma and Tim
 ## Financial Analysis
 The whole time we focussed on ratings as the main metric. But what about money? Is there any link between movie ratings and their financial success? Can we claim that actor fame also influences a movie's revenue potential? Let's have a look!
 
-## Inital Exploration
+### Inital Exploration
 
 To start with, we combined the ADA movies dataset (link) with the budget dataset and to get a cleaned dataset where each movie has renvenue and budget data.
 
 {% include fin_first_viz.html %}
 
-## Correlation & Regression Analysis
+### Correlation & Regression Analysis
 There is correlation
 
 {% include fin_lin_reg.html %}
 
-## Quartiles Analysis
+### Quartiles Analysis
 Quartiles for everything
 
 {% include fin_quartiles_box.html %}
 
-## Checking causation
+### Checking causation
 Pair matching here
 
 {% include fin_revenue_paired.html %}

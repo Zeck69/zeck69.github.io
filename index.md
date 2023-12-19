@@ -1,10 +1,9 @@
 ---
 layout: home
-title: Shine bright like adamon
-subtitle: Our datastory
+title: How does actor fame influence movie rating? 
+subtitle: A datastory by Shine bright like adamon
 ---
 
-# How does actor fame influence movie rating?
 - fame in terms of awards, online popularity and connections between actors
 
 

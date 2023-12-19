@@ -60,13 +60,15 @@ When we segment the data into rating quartiles—specifically, 5.9 (25th percent
 {% include fin_quartiles_box.html %}
 
 ### Checking causation
-To distinguish causation from mere correlation between ratings and revenues, we calculated the propensity score for each movie, considering budget and year as potential confounders. We set the threshold for a high rating at the 50th percentile, classifying ratings above 6.5 as 'high'. This categorization yielded two groups for comparison: the treated (high rating) and the control (low rating). After pair matching based on the propensity score, the average revenues of the treatment group and the control group stood at 219,224,169.79 and 106,129,755.70. This underscores that movies with higher ratings typically garner higher revenues.
+To distinguish causation from mere correlation between ratings and revenues, we calculated the propensity score for each movie, considering budget and year as potential confounders. We set the threshold for a high rating at the 50th percentile, classifying ratings above 6.5 as 'high'. This categorization yielded two groups for comparison: the treated (high rating) and the control (low rating). After pair matching based on the propensity score, the average revenues of the treatment group and the control group stood at $219,224,169.79 and $106,129,755.70. This underscores that movies with higher ratings typically garner higher revenues.
 
 In the next graphic we visualize the average revenue of both groups, alongside their respective 95% confidence intervals.
 
 {% include fin_revenue_paired.html %}
 
-Afterwards, to see if there is a meaningful difference betwenn the two, a T-test is conducted to ascertain the statistical significance of the revenue differences between the treatment and control groups. The results confirm the significance of the disparity. Additionally, when observing the difference between the treatment and control groups over the years, we found that movies in the treatment group outperformed those in the control group revenue-wise in 93% of the years. Have a look below to see how treatment and control group revenues change over the years!
+Afterwards, to see if there is a meaningful difference betwenn the two, a paired T-test is conducted to ascertain the statistical significance of the revenue differences between the treatment and control groups. The results confirm the significance of the disparity. Additionally, when observing the difference between the treatment and control groups over the years, we found that movies in the treatment group outperformed those in the control group revenue-wise in 93% of the years. 
+
+Have a look below to see how treatment and control group revenues change over the years!
 
 {% include fin_revenue_paired_years.html %}
 

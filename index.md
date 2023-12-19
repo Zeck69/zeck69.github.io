@@ -11,6 +11,10 @@ subtitle: A datastory by Shine bright like adamon
 
 ### Awards Analysis
 check Marine's part
+
+{% include interactive_genre_subplots.html %}
+
+
 ## Popularity Analysis
 Felix 
 ### Rating Icons: Are the big names worth the hype?
@@ -23,14 +27,15 @@ As the data we have for fame levels is actual, more recent casts should be more 
 
 {% include historic_fame.html %}
 
-Where does this show up?
+From our visual inspection, it looks like the more famous the better the ratings are, but is it worth it? Visually, we might guess that not all levels of fame have a significant increase. As these famous cast are not free, let’s try to find more precisely at what level the difference makes sense. We will try to find which level of fame would give you the best ratings without overspending on famous cast members. In order to do this, we need to assess the impact of fame in the ratings, eliminating any possible cofounders. To isolate the effect of fame on ratings, we have performed a paired matching. In this matching, we compare movies as likely to receive our treatment, which was having a cast known on average by any % of the population. We performed a logistic regression over the size of the cast, their awards, their experience (as in how many movies they have worked on), the number of votes the movie received, the genre, language and country of origin to obtain their propensity score to be a famous cast. With the obtained group of movies to compare the effect of fame, we found no significant difference between the movies with famous and non-famous casts. Have we been lied to? No one likes movies with Brad Pitt or Meryl Streep? Maybe their success is not as consistent as we though…
 
 {% include genre_distribution.html %}
 
-hallo this workds
+As you can see, the previous graph contains a slider to choose what threshold is considered for the treatment of the pair matching. Play around with it. Does something stand out to you? The most curious of you, will find out that there is indeed a significant difference for a good part of the levels, just not in the direction you though. As we can see, the difference is significant for low levels of fame, indicating that you should rather have an unknown cast than a medium famous cast. On the other hand, even if we increase our treatment for only very well-known casts (average fame above 75%), the difference is very clear and still not significant. Does this mean that we should throw away our beloved star - packed casts? Not so fast my dear movie visionary, as significance depends on the result of a t-test, low density parts of the movie universe are very hard to conclude on. How many movies are they in which every cast member is known by more ¾ of the population? Not so many, therefore there is a lot of variance and very little significance to the results with this threshold, even if we would like to conclude from our initial assessment that it doesn’t make sense. With our current data, we can only conclude that we are better off with an unknown cast than with a mildly famous cast.
 
-{% include interactive_genre_subplots.html %}
+### But beyond the spotlight, would you rather charisma or controversy?
 
+Is all fame good? There are multiple ways to be known, some considered more ethic than others, but does it have an impact? For this analysis, we are going to work with data concerning only the famous actors of a movie, as likeliness or controversy is much more personal and can hardly be generalized over a full cast.
 
 ## Network Analysis
 Part from Emma and Tim

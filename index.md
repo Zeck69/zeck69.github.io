@@ -41,14 +41,14 @@ Our focus is typically on ratings as the primary metric, but isn't the financial
 
 ### Inital Exploration
 
-We started by merging the ADA movies dataset (link) with the budget dataset (link), resulting in a curated collection of films where each entry is equipped with both revenue and budget data. These figures were then adjusted for inflation using our CPI data (link), ensuring that the temporal factors within the dataset are accounted for.
+We started by merging the ADA movies dataset with our budget data, resulting in a curated collection of films where each entry is equipped with both revenue and budget data. These figures were then adjusted for inflation using our CPI data, ensuring that the temporal factors within the dataset are accounted for.
 
 Upon examining the distribution of our data over the years, which movies surprise you the most when looking at their rating or revenue?
 
 {% include fin_first_viz.html %}
 
 ### Correlation & Regression Analysis
-A Pearson correlation coefficient of 0.23622 indicates a slight positive correlation between higher ratings and increased revenues. Employing linear regression to model the relationship between ratings (as the independent variable) and revenues (as the dependent variable) yields a coefficient of 7e07. This suggests that, on average, each additional rating point could mean an approximate $70,000,000 increase in movie revenue.
+Diving into the analysis, a Pearson correlation coefficient of 0.23622 indicates a slight positive correlation between higher ratings and increased revenues. Moreover, employing linear regression to model the relationship between ratings (as the independent variable) and revenues (as the dependent variable) yields a coefficient of 7e07. This suggests that, on average, each additional rating point could mean an approximate $70,000,000 increase in movie revenue.
 
 Incorporating the budget as an independent variable confirms that ratings are the dominant predictor, maintaining the established relationship with revenue.
 
@@ -66,14 +66,13 @@ In the next graphic we visualize the average revenue of both groups, alongside t
 
 {% include fin_revenue_paired.html %}
 
-Afterwards, a T-test was conducted to ascertain the statistical significance of the revenue differences between the treatment and control groups. The results confirmed the significance of the disparity.
-Additionally, when observing the difference between the treatment and control groups over the years, we found that movies in the treatment group outperformed those in the control group revenue-wise in 93% of the years.
+Afterwards, to see if there is a meaningful difference betwenn the two, a T-test is conducted to ascertain the statistical significance of the revenue differences between the treatment and control groups. The results confirm the significance of the disparity. Additionally, when observing the difference between the treatment and control groups over the years, we found that movies in the treatment group outperformed those in the control group revenue-wise in 93% of the years. Have a look below to see how treatment and control group revenues change over the years!
 
 {% include fin_revenue_paired_years.html %}
 
 ### Results of financial analysis
 
-The data presents compelling evidence that creating a movie with favorable ratings is not only artistically gratifying but is also highly likely to succeed financially, providing great rewards for the cast and directors involved.
+Finalizing our financial analysis, the data presents compelling evidence that creating a movie with favorable ratings is not only artistically gratifying but is also highly likely to succeed financially, providing great rewards for the cast and directors involved.
 
 
 ## Conclusion

@@ -29,7 +29,7 @@ As the data we have for fame levels is actual, more recent casts should be more 
 
 ### Initial analysis
 
-
+{% include initial_fame.html %}
 
 From our visual inspection, it looks like the more famous the better the ratings are, but is it worth it? Visually, we might guess that not all levels of fame have a significant increase. As these famous cast are not free, let’s try to find more precisely at what level the difference makes sense. We will try to find which level of fame would give you the best ratings without overspending on famous cast members. In order to do this, we need to assess the impact of fame in the ratings, eliminating any possible cofounders. To isolate the effect of fame on ratings, we have performed a paired matching. In this matching, we compare movies as likely to receive our treatment, which was having a cast known on average by any % of the population. We performed a logistic regression over the size of the cast, their awards, their experience (as in how many movies they have worked on), the number of votes the movie received, the genre, language and country of origin to obtain their propensity score to be a famous cast. With the obtained group of movies to compare the effect of fame, we found no significant difference between the movies with famous and non-famous casts. Have we been lied to? No one likes movies with Brad Pitt or Meryl Streep? Maybe their success is not as consistent as we though…
 

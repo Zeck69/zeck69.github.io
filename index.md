@@ -45,11 +45,14 @@ Is all fame good? There are multiple ways to be known, some considered more ethi
 
 Our initial assessment looks like the cast with extreme values to be best suited. Indeed, a very liked cast will also be very little disliked, but yet we have some unexpected results for casts with a high dislike ratio. There is a balanced choice to make here, and maybe more to untangle than what we see. We will regress a relation between our ratios and our rating, based on the evidence that we have a correlation of value around 0.2 for each ratio with the ratings. After testing multiple models, we realized 3 key facts, errors are highly heteroskedastic, there is strict multicollinearity between our inputs and our parameters are way too big to realistically explain the impact of the ratios, therefore we need to adapt our regression. Once we obtain our model function with restricted features, penalty for large coefficients and heteroskedastic standard errors, we obtain a function with the following representation:
 
+![graph_fct_1](https://github.com/thetayne/thetayne.github.io/assets/62799776/e74b49d6-bd37-4c79-92ae-354142f090e3)
 
 
 As we can see visually, there are clearly 2 points for which our optimization could converge. Stating our constraint as forcing the ratios to sum to 1 and starting our optimization problem at random points, we obtain 2 convergences, either maximizing or minimizing likeliness. This trade off shows that there is no interest in having a neutral cast, and simulating our optimization for 100 times we obtain the following cases:
 
-image
+![ineqpasforce](https://github.com/thetayne/thetayne.github.io/assets/62799776/e9e4970b-3a04-4ef5-a006-e6ff237c14ec)
+
+![force1](https://github.com/thetayne/thetayne.github.io/assets/62799776/d0faac78-28b7-493d-a2a3-adee0cad9de1)
 
 Therefore both cases are viable options.
 

@@ -1,15 +1,14 @@
 ---
 layout: home
+title: How Does Actor Fame Influence Movie Ratings ?
+style: "color: white;"
+subtitle: A Datastory by Shine bright like adamon
+background_image: https://github.com/thetayne/thetayne.github.io/blob/master/_includes/background.png?raw=true
 ---
-
-<div style="background-image: url(https://github.com/thetayne/thetayne.github.io/blob/master/_includes/background.png?raw=true); background-size: cover; background-position: center; text-align: center;">
-    <h1>How Does Actor Fame Influence Movie Ratings ?</h1>
-    <h2>A Datastory by Shine bright like adamon</h2>
-</div>
 
 - fame in terms of awards, online popularity and connections between actors
 
-In the glitzy world of Hollywood, fame and fortune are everything. From the 
+In the glitzy world of Hollywood, fame and fortune are everything. From the choice of the cast, to the country of production, to the outfit worn at the 56th minute, everything 
 
 ## Awarded Actors: Does the Shine of the Award Boost the Rating ?  
 

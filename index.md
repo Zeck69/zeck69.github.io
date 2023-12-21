@@ -104,6 +104,8 @@ The difference in average movie ratings across the 8 communities is found to be 
 
 Our focus is typically on ratings as the primary metric, but isn't the financial aspect of the movie industry just as fascinating? Is there a direct connection between movie ratings and their financial success? And do you think the fame of an actor could sway a movie's revenue potential? Let's dive in and find out!
 
+![finance](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/finance.png?raw=true)
+
 ### Inital Exploration
 
 We started by merging the ADA movies dataset with our budget data, resulting in a curated collection of films where each entry is equipped with both revenue and budget data. These figures were then adjusted for inflation using our CPI data, ensuring that the temporal factors within the dataset are accounted for.

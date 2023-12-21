@@ -33,6 +33,45 @@ The first thing we wanted to visualize is a possible trend between the average I
 
 {% include interactive_movie_analysis.html %}
 
+At first glance, the data points suggest a potential relationship between the two variables, but the correlation is not immediately clear due to the dense clustering of data across the range of award counts. The plot shows movies with varying numbers of awards distributed across the entire spectrum of IMDb ratings, from low to high. Notably, the data density does not allow for an easy visualization of a distinct trend. This suggests that while there may be a correlation, the relationship is not straightforward and could be influenced by other factors.
+
+#### The Interplay of Oscars and Ratings Across Genres
+
+Given the lack of categorization of the data, we wanted to try and see if there were any difference in trend depending on the genre of the movie. Does a high number of awards within the cast of an action movie lead to a higher rating? Is a comedy movie better ranked when the cast isn’t rewarded by the academy? Does it change in time? This additional layer of categorization could help to clarify the influence of awards on ratings within specific types of movies, allowing for a more nuanced understanding of how the Oscars affect different segments of the film industry. Because of the very high number of possible genres, we chose to continue the analysis further taking only into account the five more populated genres which are "Drama", "Comedy", "Thriller", "Romance Film" and "Action".
+
+{% include interactive_genre_subplots.html %}
+
+From our graphs, we see that all trends seem similar therefore they might not be significantly impacted by the genre of a movie. This visualization however helps us visualize further a possible correlation between the average rating of a movie and the numbers of awards within the cast. Therefore, no matter the genre, an award-winning cast does seem to increase the chance of having a higher rating! 
+
+#### The Actor’s Career: Can an Oscar nomination guarantee higher movie ratings?
+
+The lingering question is: What is the effect of academic recognition on an actor's career? Does it impact the ratings of the movies that follow? Is an Oscar nomination a golden ticket to better movie ratings or just a pat on the back for the already talented? To answer these questions, we’ve plotted the average ratings of the movies they starred in, relative to their award history. We track the movies' ratings before and after the actors were nominated to the Oscars to discern any trends in how their recognition at the Oscars might affect the perceived quality of their films.
+
+{% include avg_award.html %}
+
+We can observe that while some might climb to the top after an award others wobble, and a few even take a dip. However, the overall trend is steady. This would mean that a good actor that got praised academically in the future was just as good in his debut! 
+
+#### From Visual Trend-Spotting to Predictive Modeling
+
+Our initial visual analysis indicates that there is indeed a better chance of have higher rating if you work with an award winner. However, hiring such an actor is expensive so we better look more precisely into this! Through the initial visual analysis, we've sifted through the distribution of votes to refine our dataset, explored chronological trends, dissected genre-specific nuances, and traced the trajectories of individual actors' careers in relation to their awards. Now, we advance to a critical juncture in our visual exploration: prediction using Ordinary Least Squares regression. This predictive analysis employs OLS to draw potential correlations from our existing data visually. It serves as an intermediary step, harnessing our findings to model the expected relationship between awards and movie ratings.
+
+{% include prediction_analysis.html %}
+
+From visual inspection, it looks like the higher the number of awards the higher the rating but is it truly the case? In both analyses, the positive linear relationship of the equations implies that as the number of awards (the average or the total) increases, there is a positive effect on the average rating of the movie. However, in both analyses, the low R-squared value suggests that there is little meaningful linear correlation between the average rating of movies and the number of nominations in the cast. In other words, the analysis does not provide strong evidence that an increase in awards, both in the average over the cast and in the total count, significantly affects the average rating of the movies. Therefore, based on these results, it seems like any relationship that exists is likely weak or influenced by other factors not considered in this analysis.
+
+#### Correlation Analysis
+
+To further investigate the correlation between the number of awards nominees in the cast and the average rating of the movie, we used Pearson’s correlation coefficient to mesure the strength and direction of the relationship. In this case, the calculated correlation coefficient is 0.13, indicating a positive correlation between the cumulative count of awards won by the cast and the average ratings of movies. This suggests that as the cumulative count of awards increases, there is a tendency for movies to receive higher average ratings. This is a good start! However, we need to look in details at the possible cofounders. In fact, the size of the cast, their fame percentage and experience, the number of votes the movie received, the genre, language and country of origin might be impacting our analysis! To resolve this issue, we needed to isolate the possible effect of the number of nominations on the average rating of a movie. Therefore, we chose to perform pair-matching. Because we want to look at the results of an overall academically rewarded cast, we chose to take all the movies with at least 11 nominations as our treatment. We then performed a logistic regression over all the possible cofounder variables stated before to obtain the propensity score of being an award-winning cast. Now let’s see, is it worth it to pay a higher prize for an academically gifted actor? 
+
+![paired_11](https://github.com/thetayne/thetayne.github.io/assets/100578052/52166593-b409-4b23-ac18-6f5781a5cb95)
+
+
+We can observe, that because the obtained t-statistic is positive, the difference in means is statistically significant. Furthermore, the p-value is below the significance level (0.05), therefore, the average ratings for movie with at least 11 award winner is higher! Finally, we performed a linear regression over the matched pairs to examine the relationship between the average rating of movies and the cumulative count of awards won by the cast. We found an R-squared value of 0.107 indicating that approximately 10.7% of the variability in movie ratings can be explained by the cumulative count of awards won by the cast. However, this relationship explains only a relatively small portion of the variation in ratings, highlighting the multifaceted nature of factors that contribute to a movie's success and reception.
+
+We can therefore conclude that assembling a cast full of Oscar’s nominees is a good idea to increase your ratings, but you might want to also look at other aspects of a movie realization that might have a more significant impact for your goal to achieve higher ratings! 
+
+
+
 ## Popularity Analysis
 
 ### Rating Icons: Are the Big Names Worth the Hype ?

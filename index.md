@@ -1,13 +1,17 @@
 ---
 layout: home
-title: How does actor fame influence movie rating? 
-subtitle: A datastory by Shine bright like adamon
+title: How Does Actor Fame Influence Movie Ratings? 
+subtitle: A Datastory by Shine bright like adamon
 ---
 
 - fame in terms of awards, online popularity and connections between actors
 
 
+## Award-Winning Actors: Does the Shine of the Award Increase the Number of Stars of the Rating ?  
 
+
+
+![award_winner](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/award_winner.png?raw=true)
 
 ### Awards Analysis
 check Marine's part
@@ -18,16 +22,17 @@ check Marine's part
 
 ## Popularity Analysis
 
-### Rating Icons: Are the big names worth the hype?
+### Rating Icons: Are the Big Names Worth the Hype ?
+
 To understand the impact of a famous cast, we first need to define what is fame. We will consider the fame of an actor as the % of people that know the actor. Certainly, fame is subjective and context-dependent, and as much we would like to be omnipresent, our analysis will be confined to examining fame within the context of the United States of America. Now that we have our raw data, we need to take a second decision, when is someone famous? In our analysis, we will consider an actor famous only if half the US population knows him/her. Last, we need to estimate the fame of a cast ensemble, for this we will average the fame of the actors by the size of the cast. Once our measures established, we obtain the following 2 metrics per movie, the average fame of a cast, and it's famous to actor ratio (what % of the cast is famous). We find ourselves with a quantitative and a qualitative gauge for fame, now let’s see if all this reach is worth what they say.
 
-#### Fame: evolution over time
+#### Fame: Evolution Over Time
 
 As the data we have for fame levels is actual, more recent casts should be more likely to be famous, so one could say that analysing the impact of fame wouldn’t make sense. Yet recent movies have not better ratings than old movies, we can clearly see a downward trend in average ratings over time. Not only that, but average cast fame is fairly stable after 1930’s, which let us conclude that we can interpret the effect of the fame of different casts during different periods similarly.
 
 {% include historic_fame.html %}
 
-### Initial analysis
+### Initial Analysis
 
 {% include initial_fame.html %}
 
@@ -37,7 +42,7 @@ From our visual inspection, it looks like the more famous the better the ratings
 
 As you can see, the previous graph contains a slider to choose what threshold is considered for the treatment of the pair matching. Play around with it. Does something stand out to you? The most curious of you, will find out that there is indeed a significant difference for a good part of the levels, just not in the direction you though. As we can see, the difference is significant for low levels of fame, indicating that you should rather have an unknown cast than a medium famous cast. On the other hand, even if we increase our treatment for only very well-known casts (average fame above 75%), the difference is very clear and still not significant. Does this mean that we should throw away our beloved star - packed casts? Not so fast my dear movie visionary, as significance depends on the result of a t-test, low density parts of the movie universe are very hard to conclude on. How many movies are they in which every cast member is known by more ¾ of the population? Not so many, therefore there is a lot of variance and very little significance to the results with this threshold, even if we would like to conclude from our initial assessment that it doesn’t make sense. With our current data, we can only conclude that we are better off with an unknown cast than with a mildly famous cast.
 
-### But beyond the spotlight, would you rather charisma or controversy?
+### But Beyond the Spotlight, Would You Rather Have Charisma or Controversy?
 
 Is all fame good? There are multiple ways to be known, some considered more ethic than others, but does it have an impact? For this analysis, we are going to work with data concerning only the famous actors of a movie, as likeliness or controversy is much more personal and can hardly be generalized over a full cast.
 
@@ -56,10 +61,45 @@ As we can see visually, there are clearly 2 points for which our optimization co
 
 Therefore both cases are viable options.
 
-## Network Analysis
-Part from Emma and Tim
+## Celeb Impact: How A-List Stars Affect Film Ratings
+
+An actor can very well be Oscar-nominated or the recepient of the Emmy Award, but this does not entail that they are a Celebrity. A celebrity walks through the streets wearing sunglasses to avoid looking terrible in the paparazzi's photos. A celebrity gets stopped for pictures every time they go out in public. A celebrity knows other celebrities. A celebrity is well-connected. 
+
+![celeb_paparazzi](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/celeb_paparazzi.png?raw=true)
+
+Do celebrity casts increase movie ratings? 
+
+In this section, we delve into the relationship between celebrity actors and movie ratings. We perform network analysis to evaluate the impact, if any, of different cast combinations on average movie ratings. 
+Whether the actors have worked in the same genres, on movies shot in different countries, with cast-mates of similar age, let's discover if well-connected casts have an influence on movie ratings.  
+
+### Network Analysis: The More Movies Together The Better ? 
+
+When watching a movie, do you ever find yourself thinking: "Oh hey! These two were in that other movie together!" and wonder why? Why the same groups of actors keep being cast together? Could it be because this brings higher ratings to the movie? 
+We perform network analysis, weighing edges by the number of movies that the two actors have collaborated in, to explore how they might affect each other’s impact on a movie’s rating. We identify communities among actors and analyze whether celebrity casts with actors from the same community correspond to higher movie ratings than casts with actors from across different communities. 
+
+![actor_network_num_movies](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/actor_network_num_movies.png?raw=true)
+
+The above graph displays the connections between actor-nodes, where the thickness of the edge-connections is proportional to the number of movie collaborations of the respective actor pairs, and the size of the actor-nodes is proportional to the average rating of the movies that the corresponding actor has been in. 
+
+Only actors who have played in at least 15 movies were taken into account, resulting in a graph of 50 actor-nodes and 178 edge-connections. This graph is then used to identify communities of actors who often work together and to determine whether the difference in the average movie rating across communities is statistically significant. 
+
+![community_rating_num_movies](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_num_movies.png?raw=true)
+
+It results that the difference in the average movie rating across communities is indeed statistically significant, with community n.6 having the highest average rating. 
+
+### Network Analysis: Age Gap Among Actors or Not ?
+
+Would you rather watch a movie about a group of teenagers or one about a family? The story of adult friends or that of students and their professors? This is to say: do casts of actors that are close in age perform better in terms of movie ratings than age-heterogeneous casts? 
+To try to answer this question, we conduct network analysis by weighing the edges between actor-nodes by the reciprocal of the actors' age difference: the closer in age the actors are, the higher the weight of the connection. We then establish patterns and communities among the actors to explore whether taking actors from within the same community (age-homogeneous cast) results in higher movie ratings than taking actors from across different communities (age-heterogeneous cast). 
+
+A second flavor graph was generated with 50 actor-nodes with reciprocal age difference as edge weights; the thicker the edge, the smaller the difference in age between the two actors. Similarly to the previous actor network graph, the actor-node size is proportional to the average rating of the movies that the actor has played in. A total of 8 communities of actors with similar ages who have worked together are identified on the graph and used to determine whether these exists a statistical significance for average movie ratings across communities. 
+
+![community_rating_age](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_age.png?raw=true)
+
+The difference in average movie ratings across the 8 communities is found to be statistically significant, with community n.5 having the highest average rating and community n.8 having the notably lowest average rating. 
 
 ## Financial analysis
+
 Our focus is typically on ratings as the primary metric, but isn't the financial aspect of the movie industry just as fascinating? Is there a direct connection between movie ratings and their financial success? And do you think the fame of an actor could sway a movie's revenue potential? Let's dive in and find out!
 
 ### Inital Exploration
@@ -71,6 +111,7 @@ Upon examining the distribution of our data over the years, which movies surpris
 {% include fin_first_viz.html %}
 
 ### Correlation & Regression Analysis
+
 Diving into the analysis, a Pearson correlation coefficient of 0.23622 indicates a slight positive correlation between higher ratings and increased revenues. Moreover, employing linear regression to model the relationship between ratings (as the independent variable) and revenues (as the dependent variable) yields a coefficient of 7e07. This suggests that, on average, each additional rating point could mean an approximate $70,000,000 increase in movie revenue.
 
 Incorporating the budget as an independent variable confirms that ratings are the dominant predictor, maintaining the established relationship with revenue.
@@ -78,11 +119,13 @@ Incorporating the budget as an independent variable confirms that ratings are th
 {% include fin_lin_reg.html %}
 
 ### Quartiles Analysis
+
 When we segment the data into rating quartiles—specifically, 5.9 (25th percentile), 6.5 (50th percentile), and 7.1 (75th percentile)—the trend persists: movies with higher ratings tend to generate higher revenues.
 
 {% include fin_quartiles_box.html %}
 
-### Checking causation
+### Checking Causation
+
 To distinguish causation from mere correlation between ratings and revenues, we calculated the propensity score for each movie, considering budget and year as potential confounders. We set the threshold for a high rating at the 50th percentile, classifying ratings above 6.5 as 'high'. This categorization yielded two groups for comparison: the treated (high rating) and the control (low rating). After pair matching based on the propensity score, the average revenues of the treatment group and the control group stood at $219,224,169.79 and $106,129,755.70. This underscores that movies with higher ratings typically garner higher revenues.
 
 In the next graphic we visualize the average revenue of both groups, alongside their respective 95% confidence intervals.
@@ -95,7 +138,7 @@ Have a look below to see how treatment and control group revenues change over th
 
 {% include fin_revenue_paired_years.html %}
 
-### Results of financial analysis
+### Results of Financial Analysis
 
 Finalizing our financial analysis, the data presents compelling evidence that creating a movie with favorable ratings is not only artistically gratifying but is also highly likely to succeed financially, providing great rewards for the cast and directors involved.
 

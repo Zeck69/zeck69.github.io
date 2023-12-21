@@ -100,7 +100,7 @@ A second flavor graph was generated with 50 actor-nodes with reciprocal age diff
 
 The difference in average movie ratings across the 8 communities is found to be statistically significant, with community n.5 having the highest average rating and community n.8 having the notably lowest average rating. 
 
-## Financial analysis
+## Financial Analysis
 
 Our focus is typically on ratings as the primary metric, but isn't the financial aspect of the movie industry just as fascinating? Is there a direct connection between movie ratings and their financial success? And do you think the fame of an actor could sway a movie's revenue potential? Let's dive in and find out!
 

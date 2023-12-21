@@ -1,7 +1,7 @@
 ---
 layout: home
-title: How does actor fame influence movie rating? 
-subtitle: A datastory by Shine bright like adamon
+title: How does Actor Fame Influence Movie Ratings? 
+subtitle: A Datastory by Shine bright like adamon
 ---
 
 - fame in terms of awards, online popularity and connections between actors
@@ -56,10 +56,39 @@ As we can see visually, there are clearly 2 points for which our optimization co
 
 Therefore both cases are viable options.
 
-## Network Analysis
-Part from Emma and Tim
+## Celeb Impact: How A-List Stars Affect Film Ratings
+
+An actor can very well be Oscar-nominated or the recepient of the Emmy Award, but this does not entail that they are a Celebrity. A celebrity walks through the streets wearing sunglasses to avoid looking terrible in the paparazzi's photos. A celebrity gets stopped for pictures every time they go out in public. A celebrity knows other celebrities. A celebrity is well-connected. 
+
+![celeb_paparazzi](/_includes/celeb_paparazzi.png)
+
+Do celebrity casts increase movie ratings? 
+
+In this section, we delve into the relationship between celebrity actors and movie ratings. We perform network analysis to evaluate the impact, if any, of different cast combinations on average movie ratings. 
+Whether the actors have worked in the same genres, on movies shot in different countries, with cast-mates of similar age, let's discover if well-connected casts have an influence on movie ratings.  
+
+### Network Analysis: The More Movies Together The Better ? 
+
+When watching a movie, do you ever find yourself thinking: "Oh hey! These two were in that other movie together!" and wonder why? Why the same groups of actors keep being cast together? Could it be because this brings higher ratings to the movie? 
+We perform network analysis, weighing edges by the number of movies that the two actors have collaborated in, to explore how they might affect each other’s impact on a movie’s rating. We identify communities among actors and analyze whether celebrity casts with actors from the same community correspond to higher movie ratings than casts with actors from across different communities. 
+
+![actor_network_num_movies](/_includes/actor_network_num_movies.png)
+
+The above graph displays the connections between actor-nodes, where the edge-connections are weighted by the number of movie collaborations of the respective actor pairs. 
+
+![community_rating_num_movies](/_includes/community_rating_num_movies.png)
+
+### Network Analysis: Age Gap Among Actors or Not ?
+
+Would you rather watch a movie about a group of teenagers or one about a family? The story of adult friends or that of students and their professors? This is to say: do casts of actors that are close in age perform better in terms of movie ratings than age-heterogeneous casts? 
+To try to answer this question, we conduct network analysis by weighing the edges between actor-nodes by the reciprocal of the actors' age difference: the closer in age the actors are, the higher the weight of the connection. We then establish patterns and communities among the actors to explore whether taking actors from within the same community (age-homogeneous cast) results in higher movie ratings than taking actors from across different communities (age-heterogeneous cast). 
+
+A flavor graph was also generated for actor-nodes with reciprocal age difference as edge weights.
+
+![community_rating_age](/_includes/community_rating_age.png)
 
 ## Financial analysis
+
 Our focus is typically on ratings as the primary metric, but isn't the financial aspect of the movie industry just as fascinating? Is there a direct connection between movie ratings and their financial success? And do you think the fame of an actor could sway a movie's revenue potential? Let's dive in and find out!
 
 ### Inital Exploration
@@ -71,6 +100,7 @@ Upon examining the distribution of our data over the years, which movies surpris
 {% include fin_first_viz.html %}
 
 ### Correlation & Regression Analysis
+
 Diving into the analysis, a Pearson correlation coefficient of 0.23622 indicates a slight positive correlation between higher ratings and increased revenues. Moreover, employing linear regression to model the relationship between ratings (as the independent variable) and revenues (as the dependent variable) yields a coefficient of 7e07. This suggests that, on average, each additional rating point could mean an approximate $70,000,000 increase in movie revenue.
 
 Incorporating the budget as an independent variable confirms that ratings are the dominant predictor, maintaining the established relationship with revenue.
@@ -78,11 +108,13 @@ Incorporating the budget as an independent variable confirms that ratings are th
 {% include fin_lin_reg.html %}
 
 ### Quartiles Analysis
+
 When we segment the data into rating quartiles—specifically, 5.9 (25th percentile), 6.5 (50th percentile), and 7.1 (75th percentile)—the trend persists: movies with higher ratings tend to generate higher revenues.
 
 {% include fin_quartiles_box.html %}
 
 ### Checking causation
+
 To distinguish causation from mere correlation between ratings and revenues, we calculated the propensity score for each movie, considering budget and year as potential confounders. We set the threshold for a high rating at the 50th percentile, classifying ratings above 6.5 as 'high'. This categorization yielded two groups for comparison: the treated (high rating) and the control (low rating). After pair matching based on the propensity score, the average revenues of the treatment group and the control group stood at $219,224,169.79 and $106,129,755.70. This underscores that movies with higher ratings typically garner higher revenues.
 
 In the next graphic we visualize the average revenue of both groups, alongside their respective 95% confidence intervals.

@@ -7,7 +7,11 @@ subtitle: A Datastory by Shine bright like adamon
 - fame in terms of awards, online popularity and connections between actors
 
 
+## Award-Winning Actors: Does the Shine of the Award Increase the Number of Stars of the Rating ?  
 
+
+
+![award_winner](https://github.com/thetayne/thetayne.github.io/assets/62799776/f7e59cfe-1e23-4b11-8848-fd4c2980e581)
 
 ### Awards Analysis
 check Marine's part
@@ -18,16 +22,17 @@ check Marine's part
 
 ## Popularity Analysis
 
-### Rating Icons: Are the big names worth the hype?
+### Rating Icons: Are the Big Names Worth the Hype ?
+
 To understand the impact of a famous cast, we first need to define what is fame. We will consider the fame of an actor as the % of people that know the actor. Certainly, fame is subjective and context-dependent, and as much we would like to be omnipresent, our analysis will be confined to examining fame within the context of the United States of America. Now that we have our raw data, we need to take a second decision, when is someone famous? In our analysis, we will consider an actor famous only if half the US population knows him/her. Last, we need to estimate the fame of a cast ensemble, for this we will average the fame of the actors by the size of the cast. Once our measures established, we obtain the following 2 metrics per movie, the average fame of a cast, and it's famous to actor ratio (what % of the cast is famous). We find ourselves with a quantitative and a qualitative gauge for fame, now let’s see if all this reach is worth what they say.
 
-#### Fame: evolution over time
+#### Fame: Evolution Over Time
 
 As the data we have for fame levels is actual, more recent casts should be more likely to be famous, so one could say that analysing the impact of fame wouldn’t make sense. Yet recent movies have not better ratings than old movies, we can clearly see a downward trend in average ratings over time. Not only that, but average cast fame is fairly stable after 1930’s, which let us conclude that we can interpret the effect of the fame of different casts during different periods similarly.
 
 {% include historic_fame.html %}
 
-### Initial analysis
+### Initial Analysis
 
 {% include initial_fame.html %}
 
@@ -37,7 +42,7 @@ From our visual inspection, it looks like the more famous the better the ratings
 
 As you can see, the previous graph contains a slider to choose what threshold is considered for the treatment of the pair matching. Play around with it. Does something stand out to you? The most curious of you, will find out that there is indeed a significant difference for a good part of the levels, just not in the direction you though. As we can see, the difference is significant for low levels of fame, indicating that you should rather have an unknown cast than a medium famous cast. On the other hand, even if we increase our treatment for only very well-known casts (average fame above 75%), the difference is very clear and still not significant. Does this mean that we should throw away our beloved star - packed casts? Not so fast my dear movie visionary, as significance depends on the result of a t-test, low density parts of the movie universe are very hard to conclude on. How many movies are they in which every cast member is known by more ¾ of the population? Not so many, therefore there is a lot of variance and very little significance to the results with this threshold, even if we would like to conclude from our initial assessment that it doesn’t make sense. With our current data, we can only conclude that we are better off with an unknown cast than with a mildly famous cast.
 
-### But beyond the spotlight, would you rather charisma or controversy?
+### But Beyond the Spotlight, Would You Rather Have Charisma or Controversy?
 
 Is all fame good? There are multiple ways to be known, some considered more ethic than others, but does it have an impact? For this analysis, we are going to work with data concerning only the famous actors of a movie, as likeliness or controversy is much more personal and can hardly be generalized over a full cast.
 
@@ -119,7 +124,7 @@ When we segment the data into rating quartiles—specifically, 5.9 (25th percent
 
 {% include fin_quartiles_box.html %}
 
-### Checking causation
+### Checking Causation
 
 To distinguish causation from mere correlation between ratings and revenues, we calculated the propensity score for each movie, considering budget and year as potential confounders. We set the threshold for a high rating at the 50th percentile, classifying ratings above 6.5 as 'high'. This categorization yielded two groups for comparison: the treated (high rating) and the control (low rating). After pair matching based on the propensity score, the average revenues of the treatment group and the control group stood at $219,224,169.79 and $106,129,755.70. This underscores that movies with higher ratings typically garner higher revenues.
 
@@ -133,7 +138,7 @@ Have a look below to see how treatment and control group revenues change over th
 
 {% include fin_revenue_paired_years.html %}
 
-### Results of financial analysis
+### Results of Financial Analysis
 
 Finalizing our financial analysis, the data presents compelling evidence that creating a movie with favorable ratings is not only artistically gratifying but is also highly likely to succeed financially, providing great rewards for the cast and directors involved.
 

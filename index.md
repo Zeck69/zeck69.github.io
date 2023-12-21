@@ -1,7 +1,7 @@
 ---
 layout: home
-title: <span style="color:white; border: 2px solid black; padding: 5px;">How Does Actor Fame Influence Movie Ratings ?</span>
-subtitle: <span style="color:white; border: 2px solid black; padding: 5px;">A Datastory by Shine Bright Like Adamon</span>
+title: How Does Actor Fame Influence Movie Ratings ?
+subtitle: A Datastory by Shine Bright Like Adamon
 background-image: url(https://github.com/thetayne/thetayne.github.io/blob/master/_includes/background.png?raw=true)
 ---
 

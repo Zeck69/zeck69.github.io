@@ -60,7 +60,7 @@ Therefore both cases are viable options.
 
 An actor can very well be Oscar-nominated or the recepient of the Emmy Award, but this does not entail that they are a Celebrity. A celebrity walks through the streets wearing sunglasses to avoid looking terrible in the paparazzi's photos. A celebrity gets stopped for pictures every time they go out in public. A celebrity knows other celebrities. A celebrity is well-connected. 
 
-![celeb_paparazzi](/_includes/celeb_paparazzi.png)
+![celeb_paparazzi](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/celeb_paparazzi.png?raw=true)
 
 Do celebrity casts increase movie ratings? 
 
@@ -72,13 +72,13 @@ Whether the actors have worked in the same genres, on movies shot in different c
 When watching a movie, do you ever find yourself thinking: "Oh hey! These two were in that other movie together!" and wonder why? Why the same groups of actors keep being cast together? Could it be because this brings higher ratings to the movie? 
 We perform network analysis, weighing edges by the number of movies that the two actors have collaborated in, to explore how they might affect each other’s impact on a movie’s rating. We identify communities among actors and analyze whether celebrity casts with actors from the same community correspond to higher movie ratings than casts with actors from across different communities. 
 
-![actor_network_num_movies](/_includes/actor_network_num_movies.png)
+![actor_network_num_movies](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/actor_network_num_movies.png?raw=true)
 
 The above graph displays the connections between actor-nodes, where the thickness of the edge-connections is proportional to the number of movie collaborations of the respective actor pairs, and the size of the actor-nodes is proportional to the average rating of the movies that the corresponding actor has been in. 
 
 Only actors who have played in at least 15 movies were taken into account, resulting in a graph of 50 actor-nodes and 178 edge-connections. This graph is then used to identify communities of actors who often work together and to determine whether the difference in the average movie rating across communities is statistically significant. 
 
-![community_rating_num_movies](/_includes/community_rating_num_movies.png)
+![community_rating_num_movies](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_num_movies.png?raw=true)
 
 It results that the difference in the average movie rating across communities is indeed statistically significant, with community n.6 having the highest average rating. 
 
@@ -89,7 +89,7 @@ To try to answer this question, we conduct network analysis by weighing the edge
 
 A second flavor graph was generated with 50 actor-nodes with reciprocal age difference as edge weights; the thicker the edge, the smaller the difference in age between the two actors. Similarly to the previous actor network graph, the actor-node size is proportional to the average rating of the movies that the actor has played in. A total of 8 communities of actors with similar ages who have worked together are identified on the graph and used to determine whether these exists a statistical significance for average movie ratings across communities. 
 
-![community_rating_age](/_includes/community_rating_age.png)
+![community_rating_age](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_age.png?raw=true)
 
 The difference in average movie ratings across the 8 communities is found to be statistically significant, with community n.5 having the highest average rating and community n.8 having the notably lowest average rating. 
 

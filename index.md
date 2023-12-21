@@ -25,7 +25,13 @@ We first chose to ask ourselves: Is it fair to compare a blockbuster to a niche 
 
 {% include votes_analysis.html %}
 
-{% include genre_distribution.html %}
+In our original data set we had approximately 21,000 movies, looking at the graph we observe a significant skew in the distribution of votes, with over 14,000 movies receiving 2,000 votes or fewer. This initial finding suggests a concentration of movies with minimal public interaction, most of which lacked any Oscar awards. However, movies with a very low number of votes may not have a statistically reliable average rating. Therefore, keeping those movies would lead to false conclusions as a movie with 10 votes will be compared in our analysis to movies with more than 100k votes. 
+
+To ensure the integrity and relevance of our analysis, we established a threshold of 2,000 votes. Movies with votes below this threshold were considered to potentially skew the results due to the lower level of viewer engagement and the absence of awards. Subsequently, we refined our dataset to focus on the 7’070 movies that surpassed this vote count, which provides a more reliable foundation for evaluating the impact of Oscar awards on movie ratings.
+
+The first thing we wanted to visualize is a possible trend between the average IMDB rating and the number of awards within the cast. 
+
+{% include interactive_movie_analysis.html %}
 
 ## Popularity Analysis
 

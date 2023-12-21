@@ -15,8 +15,9 @@ In this section we ....
 
 ![award_winner](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/award_winner.png?raw=true)
 
-### Awards Analysis
-check Marine's part
+### Awards Analysis: Unveiling the Oscar Effect on Movie Ratings
+
+This analysis will focus on the impact of Oscar awards on movie ratings. Let's first explain how we define an "award", we consider both nominees and winners of the Oscars. In fact, we believe that a nomination itself is indicative of a significant acting talent. The chosen time frame for the study starts from movies released in 1926 and onwards. This starting point is selected to coincide with the Oscars' inception in 1927, providing a historical and comprehensive dataset. To deepen our understanding, we measure the total number of Oscars won by the entire cast of each movie prior to its release. Additionally, we calculate the average number of awards per actor within the movie. 
 
 {% include interactive_genre_subplots.html %}
 

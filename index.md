@@ -7,9 +7,11 @@ subtitle: A Datastory by Shine bright like adamon
 - fame in terms of awards, online popularity and connections between actors
 
 
-## Award-Winning Actors: Does the Shine of the Award Increase the Number of Stars of the Rating ?  
+## Awarded Actors: Does the Shine of the Award Boost the Rating ?  
 
+"Ladies and gentlemen, the Oscar for Best Actor goes to..."; have you ever heard of Meryl Streep? Or Leonardo DiCaprio? Will Smith? Yes, we bet you have. These are all Oscar-winning actors. And their movies are usually pretty successful, right? Have you ever asked yourself whether the ratings of a movie are influenced by the presence of awarded actors in them? 
 
+In this section we ....
 
 ![award_winner](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/award_winner.png?raw=true)
 

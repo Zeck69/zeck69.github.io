@@ -6,9 +6,15 @@ subtitle: A Datastory by Shine bright like adamon
 background_image: https://github.com/thetayne/thetayne.github.io/blob/master/_includes/background.png?raw=true
 ---
 
-- fame in terms of awards, online popularity and connections between actors
+In the glitzy world of Hollywood, fame and fortune are everything. From the choice of the cast, to the country of production, to the outfit worn at the 56th minute, everything is done in order to maximize a movie's success. But in the 21st century, where an actor's Instagram following can earn them thousands of dollars per sponsored post, and where users can access the profiles of an actor's castmates and of their movie with just a few cliks, does fame have an impact of movie ratings? What about online popularity? Maybe these aspects overshadow the influece of renouned awards... The more famous actors in a movie, the better the ratings? 
 
-In the glitzy world of Hollywood, fame and fortune are everything. From the choice of the cast, to the country of production, to the outfit worn at the 56th minute, everything 
+Let's find out! 
+
+Join us as we embark on a cinematic odyssey, from the glitzy world of Oscar awards to the vibrant realm of online popularity. We'll venture deep into the heart of actor communities, where connections and collaborations are forged, all in pursuit of uncovering the tantalizing secrets that may shape movie ratings.
+
+But that's not all! Hold on tight as we set out to discover whether fame, that elusive shimmering starlight, holds the key to blockbuster revenue. The silver screen awaits, and we're about to unravel the thrilling mysteries that make the movie industry sparkle. 
+
+And while you do so, enjoy some DALL-E generated cartoons and take a moment to appreciate the power of Applied Data Analysis: from a dataset to a data story, discover the magic of turning numbers into narratives, and Shine bright like a... Star!
 
 ## Awarded Actors: Does the Shine of the Award Boost the Rating ?  
 

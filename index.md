@@ -11,7 +11,7 @@ subtitle: A Datastory by Shine bright like adamon
 
 
 
-![award_winner](https://github.com/thetayne/thetayne.github.io/assets/62799776/f7e59cfe-1e23-4b11-8848-fd4c2980e581)
+![award_winner](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/award_winner.png?raw=true)
 
 ### Awards Analysis
 check Marine's part

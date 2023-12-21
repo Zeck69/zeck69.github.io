@@ -10,7 +10,7 @@ In the glitzy world of Hollywood, fame and fortune are everything. From the choi
 
 Let's find out! 
 
-![line](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/award_winner.png?raw=true)
+![line](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/line.png?raw=true)
 
 Join us as we embark on a cinematic odyssey, from the glitzy world of Oscar awards to the vibrant realm of online popularity. We'll venture deep into the heart of actor communities, where connections and collaborations are forged, all in pursuit of uncovering the tantalizing secrets that may shape movie ratings.
 

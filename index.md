@@ -1,6 +1,6 @@
 ---
 layout: home
-title: How does Actor Fame Influence Movie Ratings? 
+title: How Does Actor Fame Influence Movie Ratings? 
 subtitle: A Datastory by Shine bright like adamon
 ---
 
@@ -74,18 +74,24 @@ We perform network analysis, weighing edges by the number of movies that the two
 
 ![actor_network_num_movies](/_includes/actor_network_num_movies.png)
 
-The above graph displays the connections between actor-nodes, where the edge-connections are weighted by the number of movie collaborations of the respective actor pairs. 
+The above graph displays the connections between actor-nodes, where the thickness of the edge-connections is proportional to the number of movie collaborations of the respective actor pairs, and the size of the actor-nodes is proportional to the average rating of the movies that the corresponding actor has been in. 
+
+Only actors who have played in at least 15 movies were taken into account, resulting in a graph of 50 actor-nodes and 178 edge-connections. This graph is then used to identify communities of actors who often work together and to determine whether the difference in the average movie rating across communities is statistically significant. 
 
 ![community_rating_num_movies](/_includes/community_rating_num_movies.png)
+
+It results that the difference in the average movie rating across communities is indeed statistically significant, with community n.6 having the highest average rating. 
 
 ### Network Analysis: Age Gap Among Actors or Not ?
 
 Would you rather watch a movie about a group of teenagers or one about a family? The story of adult friends or that of students and their professors? This is to say: do casts of actors that are close in age perform better in terms of movie ratings than age-heterogeneous casts? 
 To try to answer this question, we conduct network analysis by weighing the edges between actor-nodes by the reciprocal of the actors' age difference: the closer in age the actors are, the higher the weight of the connection. We then establish patterns and communities among the actors to explore whether taking actors from within the same community (age-homogeneous cast) results in higher movie ratings than taking actors from across different communities (age-heterogeneous cast). 
 
-A flavor graph was also generated for actor-nodes with reciprocal age difference as edge weights.
+A second flavor graph was generated with 50 actor-nodes with reciprocal age difference as edge weights; the thicker the edge, the smaller the difference in age between the two actors. Similarly to the previous actor network graph, the actor-node size is proportional to the average rating of the movies that the actor has played in. A total of 8 communities of actors with similar ages who have worked together are identified on the graph and used to determine whether these exists a statistical significance for average movie ratings across communities. 
 
 ![community_rating_age](/_includes/community_rating_age.png)
+
+The difference in average movie ratings across the 8 communities is found to be statistically significant, with community n.5 having the highest average rating and community n.8 having the notably lowest average rating. 
 
 ## Financial analysis
 

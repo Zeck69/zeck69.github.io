@@ -124,7 +124,7 @@ As we can see visually, there are clearly 2 points for which our optimization co
 
 ![ineqpasforce](https://github.com/thetayne/thetayne.github.io/assets/62799776/e9e4970b-3a04-4ef5-a006-e6ff237c14ec)
 
-It becomes clear that both options are suitable for a great success in ratings. SInce the type of cast is highly heterogeneous, it should be studied with caution for each specific case. It is also worth mentioning that this should be a minor concern when picking the cast, as the explanatory power of our model is small.
+It becomes clear that both options are suitable for a great success in ratings. Since the type of cast is highly heterogeneous, it should be studied with caution for each specific case. It is also worth mentioning that this should be a minor concern when picking the cast, as the explanatory power of our model is small.
 
 ## Celeb Impact: How A-List Stars Affect Film Ratings
 
@@ -244,4 +244,14 @@ Finalizing our financial analysis, the data presents compelling evidence that cr
 
 
 ## Conclusion
-??? Let's seeeeee
+After our cinematic journey through the realms of fame, awards, and online popularity, we've delved deep into the fascinating world of movie ratings and their complex relationship with the stars that bring these films to life.
+
+Our findings suggest that while having a cast adorned with Oscar nominees can indeed elevate a movie's ratings, it's not the sole key to cinematic triumph. The art of filmmaking encompasses a myriad array of elements, each playing its unique role in crafting a masterpiece. From the script's resonance to the director's vision, numerous factors intertwine to captivate audiences and critics alike.
+
+The intriguing dichotomy we observed in our analysis of popularity's effect on movie ratings demonstrates that the formula for success in the movie industry is as varied as the films themselves. However, it's important to approach these findings with a discerning eye, considering the specific context and goals of each project.
+
+Moreover, our investigation into the influence of cast diversity on movie ratings revealed an unexpected insight. The diversity measure, intriguing as it might be, did not significantly sway the viewers' opinions. This suggests that audiences are drawn to a film for reasons beyond the familiarity or diversity of its cast, seeking perhaps a deeper connection with the story or a resonance with the themes explored.
+
+In wrapping up with our financial analysis, it's clear that a film's success isn't just a matter of artistic achievement. The right blend of talent, both in front of and behind the camera, can lead to not only critical acclaim but also substantial financial rewards. This intricate dance between artistic integrity and commercial viability remains a defining characteristic of the film industry.
+
+In conclusion, while the allure of fame and the glitter of awards are undeniably captivating, they are but pieces of a larger puzzle in the quest for high movie ratings. The magic of cinema lies in its ability to weave together various elements into a tapestry that enthralls, entertains, and enlightens. As filmmakers, critics, and moviegoers continue to explore this ever-evolving landscape, one thing remains clear: the journey through the world of movies is as enchanting as the destinations it leads us to.

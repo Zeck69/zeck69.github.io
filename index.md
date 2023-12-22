@@ -152,9 +152,9 @@ Only actors who have played in at least 15 movies were taken into account, resul
 
 It results that the difference in the average movie rating across communities is indeed statistically significant, with community n.6 having the highest average rating.
 
-### Network Analysis: Do people like actor diversity? 
+### Network Analysis: Do People Like Actor Diversity? 
 
-The previous result brings up another question evolving aroung the same idea, but this time analyzing the the diversity of the cast in terms of community membership: How does the diversity of the cast influence the movie rating? To thoroughly analyze this question we will define diversity in 3 different ways. Let $n$  b the number of communities and $P(x_i)$ be the proportion of actors in the $i^{th}$ community relative to the total number of actors in a movie. Then we define diversity in the following 3 ways:
+The previous result brings up another question revolving aroung the same idea, but this time analyzing the the diversity of the cast in terms of community membership: how does the diversity of the cast influence the movie rating? To thoroughly analyze this question we will define diversity in 3 different ways. Let $n$  b the number of communities and $P(x_i)$ be the proportion of actors in the $i^{th}$ community relative to the total number of actors in a movie. Then we define diversity in the following 3 ways:
 
 **1. Shannon Entropy:** Entropy in this context quantifies how evenly spread the cast members are across different communities. A lower entropy value would suggest that most cast members come from the same or a few communities (more uniform), while a higher value indicates a more diverse cast across many communities. The shannon entropy of the distribution of actors across communities in a movie is defined as
 $$ H(X) = -\sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$
@@ -163,27 +163,27 @@ $$ H(X) = -\sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$
 For a discrete probability distribution, the formula for the Gini coefficient can be simplified to
 $$ G = 1 - \sum_{i=1}^{n} P(x_i)^2 $$
 
-**3. Binary-Diversity Indicator (BNI):** In contrast to the other measures the BNI is binary and first and foremost more straight forward to interpret, which is why we included it in our analysis as well. If more than 70% of all considered actors come from the same community, we consider the cast as not being divers.
+**3. Binary-Diversity Indicator (BNI):** In contrast to the other measures the BNI is binary and first and foremost more straight forward to interpret, which is why we included it in our analysis as well. If more than 70% of all considered actors come from the same community, we consider the cast as not being diverse.
 
-In order for these measures to be meaningful, we exclude movies which only contain one or two actors that we still consider from now on. First, let's look into our continuos diversity measures, namely the entropy and the Gini coefficient. To beginn, we have a look at a histogram to get an idea of the distribution of our diversity measures.
+In order for these measures to be meaningful, we exclude movies which only contain one actor, seen as they would affect the results by not being labelled as diverse but only because a single actor plays in them. First, let's look into our continuos diversity measures, namely the entropy and the Gini coefficient. To begin, let's have a look at a histogram to get an idea of the distribution of our diversity measures.
 
     TODO INCLUDE INTERACTIVE HISTOGRAM (WOULD BE NICE WITH OVERLAY OF BOTH DISTRIBUTIONS INSTEAD OF BUTTON SWITCH) entropy/gini-frequency
 
-While on the first sight the diversity in terms of entropy and the Gini coefficient seem similar with most movies having a non-divers cast and a similar looking distribution for non-zero measures, the scale of both is different.
+While at first sight the diversity in terms of entropy and the Gini coefficient seems similar, with most movies having a non-diverss cast and a similar-looking distribution for non-zero measures, the scale of both is actually different.
 
-In order to figure out the right type of regression based on the relationship of the diversity to the average movie ratings we use the scatterplot below.
+In order to figure out the right type of regression based on the relationship of the diversity to the average movie ratings, we use the scatterplot below.
 
     INCLUDE INTERACTIVE SCATTERPLOT showing entropy /gini-averageRating
 
 There seems to be no obvious relationship present between our continuos diversity measures and the average rating. As expected, a linear regression therefore returns statistically non-significant coefficients (p-values are 0.15 and 0.29) while also the R-squared values are extremely small (0.002 and 0.001). The variance in the movie ratings is hence not explained by our continuos diversity measures.
 
-We will see that unsurprisingly the same holds for our BNI measure. Regarding BNI we end up with 715 movies that have a divers cast and 1498 that have a non-divers cast, as seen below in the diagramm.
+We will see that unsurprisingly the same holds for our BNI measure. Regarding BNI we end up with 715 movies that have a diverse cast and 1498 that have a non-diverse cast, as seen below in the diagramm.
 
     POTENTIALLY INCLUDE BAR DIAGRAMM OF BNI
 
-To be statistically correct for the binary BNI we first do both paired- and propensity score matching to account for potential confounders before doing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching we are left with a balanced dataset of 318 movies. When comparing the average rating of diverse and non-diverse cast for our balanced and unbalanced dataset there is barely a difference. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not epxlain the underlying data well as indicated by an R-squared of 0.
+To be statistically correct for the binary BNI we first do both paired and propensity score matching to account for potential confounders before performing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching, we are left with a balanced dataset of 318 movies. When comparing the average rating of diverse and non-diverse casts for our balanced and unbalanced dataset there is barely a difference. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not explain the underlying data well as indicated by an R-squared of 0.
 
-To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. The diversity measure does not explain the variability in movie ratings. Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies, they evaluate a movie based on other criteria.
+To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. The diversity measure does not explain the variability in movie ratings. Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies; they rather evaluate a movie based on other criteria.
 
 ### Network Analysis: Age Gap Among Actors or Not ?
 
@@ -232,7 +232,7 @@ In the next graphic we visualize the average revenue of both groups, alongside t
 
 {% include fin_revenue_paired.html %}
 
-Afterwards, to see if there is a meaningful difference betwenn the two, a paired T-test is conducted to ascertain the statistical significance of the revenue differences between the treatment and control groups. The results confirm the significance of the disparity. Additionally, when observing the difference between the treatment and control groups over the years, we found that movies in the treatment group outperformed those in the control group revenue-wise in 93% of the years. 
+Afterwards, to see if there is a meaningful difference between the two, a paired T-test is conducted to ascertain the statistical significance of the revenue differences between the treatment and control groups. The results confirm the significance of the disparity. Additionally, when observing the difference between the treatment and control groups over the years, we found that movies in the treatment group outperformed those in the control group revenue-wise in 93% of the years. 
 
 Have a look below to see how treatment and control group revenues change over the years!
 

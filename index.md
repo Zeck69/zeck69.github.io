@@ -187,17 +187,6 @@ To conclude our analysis of the influence of the cast-diversity on the movie rat
 Also, even if our last model using the BNI was statistically significant, the very small difference in average movie ratings would make this finding practically irrelevant.
 Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies; they rather evaluate a movie based on other criteria.
 
-### Network Analysis: Age Gap Among Actors or Not ?
-
-Would you rather watch a movie about a group of teenagers or one about a family? The story of adult friends or that of students and their professors? This is to say: do casts of actors that are close in age perform better in terms of movie ratings than age-heterogeneous casts? 
-To try to answer this question, we conduct network analysis by weighing the edges between actor-nodes by the reciprocal of the actors' age difference: the closer in age the actors are, the higher the weight of the connection. We then establish patterns and communities among the actors to explore whether taking actors from within the same community (age-homogeneous cast) results in higher movie ratings than taking actors from across different communities (age-heterogeneous cast). 
-
-A second flavor graph was generated with 50 actor-nodes with reciprocal age difference as edge weights; the thicker the edge, the smaller the difference in age between the two actors. Similarly to the previous actor network graph, the actor-node size is proportional to the average rating of the movies that the actor has played in. A total of 8 communities of actors with similar ages who have worked together are identified on the graph and used to determine whether these exists a statistical significance for average movie ratings across communities. 
-
-![community_rating_age](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_age.png?raw=true)
-
-The difference in average movie ratings across the 8 communities is found to be statistically significant, with community n.5 having the highest average rating and community n.8 having the notably lowest average rating. 
-
 ## Financial Analysis
 
 Our focus is typically on ratings as the primary metric, but isn't the financial aspect of the movie industry just as fascinating? Is there a direct connection between movie ratings and their financial success? And do you think the fame of an actor could sway a movie's revenue potential? Let's dive in and find out!

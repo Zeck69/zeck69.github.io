@@ -167,34 +167,25 @@ $$ G = 1 - \sum_{i=1}^{n} P(x_i)^2 $$
 
 In order for these measures to be meaningful, we exclude movies which only contain one actor, seen as they would affect the results by not being labelled as diverse but only because a single actor plays in them. First, let's look into our continuos diversity measures, namely the entropy and the Gini coefficient. To begin, let's have a look at a histogram to get an idea of the distribution of our diversity measures.
 
-    TODO INCLUDE INTERACTIVE HISTOGRAM (WOULD BE NICE WITH OVERLAY OF BOTH DISTRIBUTIONS INSTEAD OF BUTTON SWITCH) entropy/gini-frequency
+![distr_of_diversity_measures](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/distr_of_diversity_measures.png?raw=true)
 
-While at first sight the diversity in terms of entropy and the Gini coefficient seems similar, with most movies having a non-diverss cast and a similar-looking distribution for non-zero measures, the scale of both is actually different.
+While at first sight the diversity in terms of entropy and the Gini coefficient seems similar, with lots of movies having a non-divers cast and a similar-looking distribution for non-zero measures, the scale of both is actually different.
 
 In order to figure out the right type of regression based on the relationship of the diversity to the average movie ratings, we use the scatterplot below.
 
-    INCLUDE INTERACTIVE SCATTERPLOT showing entropy /gini-averageRating
+![scatter_of_diversity_measures](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/scatter_of_diversity_measures.png?raw=true)
 
 There seems to be no obvious relationship present between our continuos diversity measures and the average rating. As expected, a linear regression therefore returns statistically non-significant coefficients (p-values are 0.15 and 0.29) while also the R-squared values are extremely small (0.002 and 0.001). The variance in the movie ratings is hence not explained by our continuos diversity measures.
 
-We will see that unsurprisingly the same holds for our BNI measure. Regarding BNI we end up with 715 movies that have a diverse cast and 1498 that have a non-diverse cast, as seen below in the diagramm.
+We will see that unsurprisingly the same holds for our BNI measure. Regarding BNI we ended up with 715 movies that have a diverse cast and 392 that have a non-diverse cast, as we have seen two diagrams above.
 
-    POTENTIALLY INCLUDE BAR DIAGRAMM OF BNI
+To be statistically correct for the binary BNI we first do both paired and propensity score matching to account for potential confounders before performing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching, we are left with a balanced dataset of 660 movies. When comparing the average rating of diverse and non-diverse casts for our balanced and unbalanced dataset there is barely a difference, which can be seen in the resulting diagramm of our regression analysis below. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not explain the underlying data well as indicated by an R-squared of 0.
 
-To be statistically correct for the binary BNI we first do both paired and propensity score matching to account for potential confounders before performing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching, we are left with a balanced dataset of 318 movies. When comparing the average rating of diverse and non-diverse casts for our balanced and unbalanced dataset there is barely a difference. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not explain the underlying data well as indicated by an R-squared of 0.
+![matched_vs_unmatched](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/matched_vs_unmatched.png?raw=true)
 
-To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. The diversity measure does not explain the variability in movie ratings. Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies; they rather evaluate a movie based on other criteria.
-
-### Network Analysis: Age Gap Among Actors or Not ?
-
-Would you rather watch a movie about a group of teenagers or one about a family? The story of adult friends or that of students and their professors? This is to say: do casts of actors that are close in age perform better in terms of movie ratings than age-heterogeneous casts? 
-To try to answer this question, we conduct network analysis by weighing the edges between actor-nodes by the reciprocal of the actors' age difference: the closer in age the actors are, the higher the weight of the connection. We then establish patterns and communities among the actors to explore whether taking actors from within the same community (age-homogeneous cast) results in higher movie ratings than taking actors from across different communities (age-heterogeneous cast). 
-
-A second flavor graph was generated with 50 actor-nodes with reciprocal age difference as edge weights; the thicker the edge, the smaller the difference in age between the two actors. Similarly to the previous actor network graph, the actor-node size is proportional to the average rating of the movies that the actor has played in. A total of 8 communities of actors with similar ages who have worked together are identified on the graph and used to determine whether these exists a statistical significance for average movie ratings across communities. 
-
-![community_rating_age](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_age.png?raw=true)
-
-The difference in average movie ratings across the 8 communities is found to be statistically significant, with community n.5 having the highest average rating and community n.8 having the notably lowest average rating. 
+To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. Additionally the diversity measure does not explain the variability in movie ratings.
+Also, even if our last model using the BNI was statistically significant, the very small difference in average movie ratings would make this finding practically irrelevant.
+Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies; they rather evaluate a movie based on other criteria.
 
 ## Financial Analysis
 

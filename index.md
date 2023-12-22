@@ -164,22 +164,27 @@ $$ H(X) = -\sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$
 For a discrete probability distribution, the formula for the Gini coefficient can be simplified to
 $$ G = 1 - \sum_{i=1}^{n} P(x_i)^2 $$
 
-**3. Binary-Diversity Indicator:** If more than 70% of all considered actors come from the same community, we consider the cast as not being divers.
+**3. Binary-Diversity Indicator (BNI):** In contrast to the other measures the BNI is binary and first and foremost more straight forward to interpret, which is why we included it in our analysis as well. If more than 70% of all considered actors come from the same community, we consider the cast as not being divers.
 
-Let's have a look at a scatterplot to get an idea of the distribution of our diversity measures.
+In order for these measures to be meaningful, we exclude movies which only contain one or two actors that we still consider from now on. First, let's look into our continuos diversity measures, namely the entropy and the Gini coefficient. To beginn, we have a look at a histogram to get an idea of the distribution of our diversity measures.
 
-    TODO INCLUDE INTERACTIVE SCATTERPLOT
+    TODO INCLUDE INTERACTIVE HISTOGRAM (WOULD BE NICE WITH OVERLAY OF BOTH DISTRIBUTIONS INSTEAD OF BUTTON SWITCH) entropy/gini-frequency
 
+While on the first sight the diversity in terms of entropy and the Gini coefficient seem similar with most movies having a non-divers cast and a similar looking distribution for non-zero measures, the scale of both is different.
 
+In order to figure out the right type of regression based on the relationship of the diversity to the average movie ratings we use the scatterplot below.
 
+    INCLUDE INTERACTIVE SCATTERPLOT showing entropy /gini-averageRating
 
----
-/ Include diagram of  measures where you can switch
+There seems to be no obvious relationship present between our continuos diversity measures and the average rating. As expected, a linear regression therefore returns statistically non-significant coefficients (p-values are 0.15 and 0.29) while also the R-squared values are extremely small (0.002 and 0.001). The variance in the movie ratings is hence not explained by our continuos diversity measures.
 
-1. Analyse using  entropy and ginj coefficient ( together with plots next to each other)
-2. Analyse using binary variable with matching (does this make sense though to lower the detail with binary?)
+We will see that unsurprisingly the same holds for our BNI measure. Regarding BNI we end up with 715 movies that have a divers cast and 1498 that have a non-divers cast, as seen below in the diagramm.
 
-Conclude
+    POTENTIALLY INCLUDE BAR DIAGRAMM OF BNI
+
+To be statistically correct for the binary BNI we first do both paired- and propensity score matching to account for potential confounders before doing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching we are left with a balanced dataset of 318 movies. When comparing the average rating of diverse and non-diverse cast for our balanced and unbalanced dataset there is barely a difference. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not epxlain the underlying data well as indicated by an R-squared of 0.
+
+To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. The diversity measure does not explain the variability in movie ratings. Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies, they evaluate a movie based on other criteria.
 ---
 
 ### Network Analysis: Age Gap Among Actors or Not ?

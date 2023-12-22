@@ -8,7 +8,7 @@ share-img: /assets/img/background.png
 use-site-title: true
 ---
 
-In the glitzy world of Hollywood, fame and fortune are everything. From the choice of the cast, to the country of production, to the outfit worn at the 56th minute, everything is done in order to maximize a movie's success. But in the 21st century, where an actor's Instagram following can earn them thousands of dollars per sponsored post, and where users can access the profiles of an actor's castmates and of their movie with just a few cliks, does fame have an impact of movie ratings? What about online popularity? Maybe these aspects overshadow the influece of renouned awards... The more famous actors in a movie, the better the ratings? 
+In the glitzy world of Hollywood, fame and fortune are everything. From the choice of the cast, to the country of production, to the outfit worn at the 56th minute, everything is done in order to maximize a movie's success. But in the 21st century, where an actor's Instagram following can earn them thousands of dollars per sponsored post, and where users can access the profiles of an actor's castmates and of their movie with just a few cliks, does fame have an impact of movie ratings? What about online popularity? Maybe these aspects overshadow the influece of renouned awards... **The more famous actors in a movie, the better the ratings?** 
 
 Let's find out! 
 

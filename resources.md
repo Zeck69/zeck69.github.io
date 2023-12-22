@@ -13,6 +13,6 @@ Find here the [Popularity Dataset](https://today.yougov.com/ratings/entertainmen
 
 Find here the [Awards Dataset](https://datahub.io/rufuspollock/oscars-nominees-and-winners#resource-oscars-nominees-and-winners_zip). 
 
-Find here the [Inflation](https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?end=2022&start=1960&view=chart). 
+Find here the [Inflation Dataset](https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?end=2022&start=1960&view=chart). 
 
 ![film_slim](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/film_slim.png?raw=true)

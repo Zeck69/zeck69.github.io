@@ -124,8 +124,6 @@ As we can see visually, there are clearly 2 points for which our optimization co
 
 ![ineqpasforce](https://github.com/thetayne/thetayne.github.io/assets/62799776/e9e4970b-3a04-4ef5-a006-e6ff237c14ec)
 
-![force1](https://github.com/thetayne/thetayne.github.io/assets/62799776/d0faac78-28b7-493d-a2a3-adee0cad9de1)
-
 It becomes clear that both options are suitable for a great success in ratings. As the type of cast is very different, it should be studied with caution for each specific case. It is also worth mentioning that this should be a minor concern when picking the cast, as the explanatory power of our model is small.
 
 ## Celeb Impact: How A-List Stars Affect Film Ratings

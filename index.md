@@ -154,7 +154,7 @@ It results that the difference in the average movie rating across communities is
 
 ### Network Analysis: Do People Like Actor Diversity? 
 
-The previous result brings up another question revolving aroung the same idea, but this time analyzing the the diversity of the cast in terms of community membership: how does the diversity of the cast influence the movie rating? To thoroughly analyze this question we will define diversity in 3 different ways. Let $n$  b the number of communities and $P(x_i)$ be the proportion of actors in the $i^{th}$ community relative to the total number of actors in a movie. Then we define diversity in the following 3 ways:
+The previous result brings up another question revolving aroung the same idea, but this time analyzing the the diversity of the cast in terms of community membership: how does the diversity of the cast influence the movie rating? To thoroughly analyze this question we will define diversity in 3 different ways. Let $n$  b the number of communities and \( P(x_i) \) be the proportion of actors in the \( i^{th} \) community relative to the total number of actors in a movie. Then we define diversity in the following 3 ways:
 
 **1. Shannon Entropy:** Entropy in this context quantifies how evenly spread the cast members are across different communities. A lower entropy value would suggest that most cast members come from the same or a few communities (more uniform), while a higher value indicates a more diverse cast across many communities. The shannon entropy of the distribution of actors across communities in a movie is defined as
 $$ H(X) = -\sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$

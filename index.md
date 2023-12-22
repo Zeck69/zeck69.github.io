@@ -169,7 +169,7 @@ In order for these measures to be meaningful, we exclude movies which only conta
 
 ![distr_of_diversity_measures](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/distr_of_diversity_measures.png?raw=true)
 
-While at first sight the diversity in terms of entropy and the Gini coefficient seems similar, with most movies having a non-diverss cast and a similar-looking distribution for non-zero measures, the scale of both is actually different.
+While at first sight the diversity in terms of entropy and the Gini coefficient seems similar, with lots of movies having a non-divers cast and a similar-looking distribution for non-zero measures, the scale of both is actually different.
 
 In order to figure out the right type of regression based on the relationship of the diversity to the average movie ratings, we use the scatterplot below.
 
@@ -179,9 +179,13 @@ There seems to be no obvious relationship present between our continuos diversit
 
 We will see that unsurprisingly the same holds for our BNI measure. Regarding BNI we ended up with 715 movies that have a diverse cast and 392 that have a non-diverse cast, as we have seen two diagrams above.
 
-To be statistically correct for the binary BNI we first do both paired and propensity score matching to account for potential confounders before performing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching, we are left with a balanced dataset of 318 movies. When comparing the average rating of diverse and non-diverse casts for our balanced and unbalanced dataset there is barely a difference. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not explain the underlying data well as indicated by an R-squared of 0.
+To be statistically correct for the binary BNI we first do both paired and propensity score matching to account for potential confounders before performing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching, we are left with a balanced dataset of 660 movies. When comparing the average rating of diverse and non-diverse casts for our balanced and unbalanced dataset there is barely a difference, which can be seen in the resulting diagramm of our regression analysis below. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not explain the underlying data well as indicated by an R-squared of 0.
 
-To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. The diversity measure does not explain the variability in movie ratings. Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies; they rather evaluate a movie based on other criteria.
+![matched_vs_unmatched](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/matched_vs_unmatched.png?raw=true)
+
+To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. Additionally the diversity measure does not explain the variability in movie ratings.
+Also, even if our last model using the BNI was statistically significant, the very small difference in average movie ratings would make this finding practically irrelevant.
+Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies; they rather evaluate a movie based on other criteria.
 
 ### Network Analysis: Age Gap Among Actors or Not ?
 

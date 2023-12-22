@@ -187,7 +187,6 @@ We will see that unsurprisingly the same holds for our BNI measure. Regarding BN
 To be statistically correct for the binary BNI we first do both paired- and propensity score matching to account for potential confounders before doing a linear regression. Potential confounders influencing both the diversity of the cast and the ratings are the number of languages, the number of countries, the release year and the genre of the movie. After matching we are left with a balanced dataset of 318 movies. When comparing the average rating of diverse and non-diverse cast for our balanced and unbalanced dataset there is barely a difference. Equal to our observations with the continuos diversity measures above, the linear regression is not statistically signifant and does not epxlain the underlying data well as indicated by an R-squared of 0.
 
 To conclude our analysis of the influence of the cast-diversity on the movie ratings, we didn't observe any statistically significant effect. The diversity measure does not explain the variability in movie ratings. Viewers do not seem to care about how often the actors collaborate or how similar they are in terms of done movies, they evaluate a movie based on other criteria.
----
 
 ### Network Analysis: Age Gap Among Actors or Not ?
 

@@ -151,7 +151,36 @@ Only actors who have played in at least 15 movies were taken into account, resul
 
 ![community_rating_num_movies](https://github.com/thetayne/thetayne.github.io/blob/master/_includes/community_rating_num_movies.png?raw=true)
 
-It results that the difference in the average movie rating across communities is indeed statistically significant, with community n.6 having the highest average rating. 
+It results that the difference in the average movie rating across communities is indeed statistically significant, with community n.6 having the highest average rating.
+
+### Network Analysis: Do people like actor diversity? 
+
+The previous result brings up another question evolving aroung the same idea, but this time analyzing the the diversity of the cast in terms of community membership: How does the diversity of the cast influence the movie rating? To thoroughly analyze this question we will define diversity in 3 different ways. Let $n$  b the number of communities and $P(x_i)$ be the proportion of actors in the $i^{th}$ community relative to the total number of actors in a movie. Then we define diversity in the following 3 ways:
+
+**1. Shannon Entropy:** Entropy in this context quantifies how evenly spread the cast members are across different communities. A lower entropy value would suggest that most cast members come from the same or a few communities (more uniform), while a higher value indicates a more diverse cast across many communities. The shannon entropy of the distribution of actors across communities in a movie is defined as
+$$ H(X) = -\sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$
+
+**2. Gini-Coefficient:** Originally used to measure income inequality, the Gini coefficient can be adapted to measure inequality in community representation within a movie's cast. A Gini coefficient of 0 would indicate perfect uniformity (all cast members are from the same community), while a coefficient closer to 1 would indicate high inequality (cast members are evenly spread out across many communities).
+For a discrete probability distribution, the formula for the Gini coefficient can be simplified to
+$$ G = 1 - \sum_{i=1}^{n} P(x_i)^2 $$
+
+**3. Binary-Diversity Indicator:** If more than 70% of all considered actors come from the same community, we consider the cast as not being divers.
+
+Let's have a look at a scatterplot to get an idea of the distribution of our diversity measures.
+
+    TODO INCLUDE INTERACTIVE SCATTERPLOT
+
+
+
+
+---
+/ Include diagram of  measures where you can switch
+
+1. Analyse using  entropy and ginj coefficient ( together with plots next to each other)
+2. Analyse using binary variable with matching (does this make sense though to lower the detail with binary?)
+
+Conclude
+---
 
 ### Network Analysis: Age Gap Among Actors or Not ?
 

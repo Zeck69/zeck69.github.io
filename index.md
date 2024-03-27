@@ -1,7 +1,7 @@
 ---
 layout: home
-title: How Does Actor Fame Influence Movie Ratings ?
-subtitle: A Datastory by Shine Bright Like Adamon
+title: Comment devenir une déesse ?
+subtitle: Une guideline du legendaire auteur Médée
 cover-img: /assets/img/background.png
 thumbnail-img: /assets/img/background.png
 share-img: /assets/img/background.png

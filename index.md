@@ -8,6 +8,18 @@ share-img: /assets/img/background.png
 use-site-title: true
 ---
 
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+    <div style="font-size: 0.85em; color: #888; margin-bottom: 5px;">Part 1</div>
+    <h2 style="margin-top: 0;">Protecting Your Eyes during Computer Use</h2>
+    <img src="/assets/img/background.png" alt="Protecting Eyes Image" style="max-width: 100%; height: auto;">
+    <ol>
+        <li>
+            <strong>Sit far enough away from the screen.</strong> This is usually considered at least an arm's length away from the screen. To make sure your computer is positioned right, try the high-five test: if you can properly high-five your computer screen with a full arm extension, you're sitting too close.
+        </li>
+    </ol>
+</div>
+
+
 In the glitzy world of Hollywood, fame and fortune are everything. From the choice of the cast, to the country of production, to the outfit worn at the 56th minute, everything is done in order to maximize a movie's success. But in the 21st century, where an actor's Instagram following can earn them thousands of dollars per sponsored post, and where users can access the profiles of an actor's castmates and of their movie with just a few cliks, does fame have an impact of movie ratings? What about online popularity? Maybe these aspects overshadow the influece of renouned awards... **The more famous actors in a movie, the better the ratings?** 
 
 Let's find out! 

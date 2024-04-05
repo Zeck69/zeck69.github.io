@@ -11,7 +11,7 @@ use-site-title: true
 <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
     <div style="font-size: 0.85em; color: #fff; background-color: #4CAF50; padding: 2px 5px; width: fit-content; margin-bottom: 5px;">Part 1</div>
     <h2 style="margin-top: 0;">Protecting Your Eyes during Computer Use</h2>
-    <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="max-width: 80%; height: auto;">
+    <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="max-width: 30%; height: auto;">
     <ol>
         <li>
             <strong>Sit far enough away from the screen.</strong> This is usually considered at least an arm's length away from the screen. To make sure your computer is positioned right, try the high-five test: if you can properly high-five your computer screen with a full arm extension, you're sitting too close.

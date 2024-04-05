@@ -9,7 +9,7 @@ use-site-title: true
 ---
 
 <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
-    <div style="font-size: 0.85em; color: #888; margin-bottom: 5px;">Part 1</div>
+    <div style="font-size: 0.85em; color: #888; background-color: #4CAF50; margin-bottom: 5px;">Part 1</div>
     <h2 style="margin-top: 0;">Protecting Your Eyes during Computer Use</h2>
     <img src="/assets/img/background.png" alt="Protecting Eyes Image" style="max-width: 100%; height: auto;">
     <ol>

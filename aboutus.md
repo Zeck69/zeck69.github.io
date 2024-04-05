@@ -3,7 +3,7 @@ layout: page
 title: About the author
 subtitle: Behind the Mayhem of the mysterious master mind of Médée
 ---
-![medee](https://github.com/zeck69/zeck69.github.io/blob/master/_includes/assets/img/medee.png?raw=true)
+![medee](https://github.com/zeck69/zeck69.github.io/blob/master/assets/img/medee.png?raw=true)
 
 <div style="text-align: justify;">
 

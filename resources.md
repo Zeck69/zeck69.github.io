@@ -12,5 +12,5 @@ title: Resources
 - SENEQUE, Médée (traduction de Florence Dupont)
 
 <div>
-<img src="assets/img/books.png" alt="book_ref" style="max-width: 100%; height: auto;">
+<img src="https://github.com/zeck69/zeck69.github.io/blob/master/assets/img/books.png" alt="book_ref" style="max-width: 100%; height: auto;">
 </div>

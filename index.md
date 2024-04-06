@@ -19,6 +19,9 @@ use-site-title: true
         <li>
             <strong>Explorez vos options :</strong> À l’idéal, testez l’opinion de votre père pour être sûre que cela le mettra en colère. Assurez-vous que votre étranger soit assez manipulateur et veuille dérober quelque chose précieux avant de partir. (spoiler alert, vous allez fuir)
         </li>
+        <li>
+            <strong>Ne soyez pas sélective :</strong> Dès qu’un homme remplit les conditions (ou pas), soyez prête à tout quitter au plus vite. Aidez votre étranger coûte que coûte, quelle que soit la demande.
+        </li>
 
     </ol>
 </div>

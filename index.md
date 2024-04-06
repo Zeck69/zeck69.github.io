@@ -14,13 +14,13 @@ use-site-title: true
     <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <strong>Définissez vos critères:</strong> Qu’est-ce qui vous motive ? Aller à l’encontre des désirs de votre père ? Détruire l’héritage familial ? Voler un trésor national pour devenir une fugitive de renom ?
+            <strong>Définissez vos critères:</strong> <span style="text-align: justify;"> Qu’est-ce qui vous motive ? Aller à l’encontre des désirs de votre père ? Détruire l’héritage familial ? Voler un trésor national pour devenir une fugitive de renom ?</span>
         </li>
         <li>
-            <strong>Explorez vos options :</strong> À l’idéal, testez l’opinion de votre père pour être sûre que cela le mettra en colère. Assurez-vous que votre étranger soit assez manipulateur et veuille dérober quelque chose précieux avant de partir. (spoiler alert, vous allez fuir)
+            <strong>Explorez vos options :</strong> <span style="text-align: justify;"> À l’idéal, testez l’opinion de votre père pour être sûre que cela le mettra en colère. Assurez-vous que votre étranger soit assez manipulateur et veuille dérober quelque chose précieux avant de partir. (spoiler alert, vous allez fuir)</span>
         </li>
         <li>
-            <strong>Ne soyez pas sélective :</strong> Dès qu’un homme remplit les conditions (ou pas), soyez prête à tout quitter au plus vite. Aidez votre étranger coûte que coûte, quelle que soit la demande.
+            <strong>Ne soyez pas sélective :</strong> <span style="text-align: justify;"> Dès qu’un homme remplit les conditions (ou pas), soyez prête à tout quitter au plus vite. Aidez votre étranger coûte que coûte, quelle que soit la demande.</span>
         </li>
 
     </ol>

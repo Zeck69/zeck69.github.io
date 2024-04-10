@@ -38,11 +38,11 @@ use-site-title: true
 
 <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
     <div style="font-size: 0.85em; color: #fff; background-color: #4CAF50; padding: 2px 5px; width: fit-content; margin-bottom: 5px;">Part 3</div>
-    <h2 style="margin-top: 0;">Fuir sa terre natale avec son amour et éliminer tout obstacle sur sa route</h2>
+    <h2 style="margin-top: 0;"> Fuir sa terre natale avec son amour et éliminer tout obstacle sur sa route </h2>
     <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Les épreuves lancées à votre bien aimé ne lui laissent pas d’autres choix que de fuir, vous devez le suivre ! Partout où il ira, veillez bien à être la raison de sa survie et de celle de ses amis. Si quelqu’un ose vous barrer le chemin, faites ce qui s’impose pour libérer la voie, même si cela doit défier la morale…
+            <span style="text-align: justify;"> Les épreuves lancées à votre bien aimé ne lui laissent pas d’autres choix que de fuir, vous devez le suivre ! Partout où il ira, veillez bien à être la raison de sa survie et de celle de ses amis. Si quelqu’un ose vous barrer le chemin, faites ce qui s’impose pour libérer la voie, même si cela doit défier la morale…</span>
         </li>
     </ol>
 </div>
@@ -53,7 +53,42 @@ use-site-title: true
     <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Si ce long voyage commence à vous fatiguer, trouvez refuge sur une belle île, et quoi de mieux dans un cadre si idyllique que de sceller votre amour éternel ? Votre père ne pourra ainsi plus vous reprocher de fuir au bras d’un parfait inconnu.
+            <span style="text-align: justify;"> Si ce long voyage commence à vous fatiguer, trouvez refuge sur une belle île, et quoi de mieux dans un cadre si idyllique que de sceller votre amour éternel ? Votre père ne pourra ainsi plus vous reprocher de fuir au bras d’un parfait inconnu.</span>
         </li>
     </ol>
 </div>
+
+
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+    <div style="font-size: 0.85em; color: #fff; background-color: #4CAF50; padding: 2px 5px; width: fit-content; margin-bottom: 5px;">Part 5</div>
+    <h2 style="margin-top: 0;">Établir un foyer aux côtés de votre Amour dans sa terre natale et tout mettre en œuvre pour qu’il connaisse la plus grande félicité </h2>
+    <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
+    <ol>
+        <li>
+            <span style="text-align: justify;"> Suivez votre Amour jusqu’à son berceau, que ça soit un bidonville surpeuplé ou un manoir luxueux: plantez ensemble les racines de votre foyer, mais laissez à votre Amour le choix de l’endroit et le moment… et les modalités… et les battements de votre cœur. Désire-t-il un majestueux château sur un rocher escarpé? Traitez-le comme votre roi suprême et bâtissez avec lui un empire d’amour et de rêves. Montre-t-il une frustration continue déclenchée par un adversaire vexant ? Débarrassez-vous de ce rival pour enlever ce poids fastidieux de ses épaules et rétablir le bonheur au centre de votre foyer. Exploitez vos sorcelleries les plus obscures et rusées pour aplanir le chemin de votre Amour, pour que tout obstacle soit annihilé et tout inconvénient incendié. Que votre seule pensée devienne la félicité de votre Amour. </span>
+        </li>
+    </ol>
+</div>
+
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+    <div style="font-size: 0.85em; color: #fff; background-color: #4CAF50; padding: 2px 5px; width: fit-content; margin-bottom: 5px;">Part 6</div>
+    <h2 style="margin-top: 0;">Laisser déborder sa rage vengeresse contre le monde le monde qui nous à trahi</h2>
+    <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
+    <ol>
+        <li>
+            <span style="text-align: justify;"> Mais la femme est femme, elle est née pour les larmes. Tôt ou tard vous vous trouverez déchue, lamentable, abandonnée par un amour pour lequel vous aviez tout sacrifié. Mais votre vengeance est déjà là, votre vengeance est déjà née. Préparez vous à être vous-même, débarrassée de tout respect humain, c’est dans la souffrance que votre génie grandit. Sacrifiez alors tous les bonheurs partagés avec lui, qu’ils acquittent sa trahison; et que les hommes comprennent, que vos mains savent façonner toutes sortes de crimes.</span>
+        </li>
+    </ol>
+</div>
+
+<div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+    <div style="font-size: 0.85em; color: #fff; background-color: #4CAF50; padding: 2px 5px; width: fit-content; margin-bottom: 5px;">Part 7</div>
+    <h2 style="margin-top: 0;">Profitez! </h2>
+    <img src="/assets/img/guys.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
+    <ol>
+        <li>
+            <span style="text-align: justify;"> Maintenant que vous avez assouvi votre vengeance contre la trahison de Jason, disciplinez vos émotions afin de ne plus ressentir ni colère, ni peine causée par les actes affreux que vous avez pu commettre. En libérant votre esprit de toutes ces pensées tourmentées, votre esprit gagne en clarté et vous pouvez désormais réfléchir à la manière dont vous voulez réveiller votre plein potentiel et le pouvoir qui sommeille en vous. Tout ce que vous avez entrepris pour sauver Jason peut maintenant être utilisé à votre avantage. Empoisonnez, guérissez, créez, et envolez-vous dans un char ailé vers les cieux pour transcender votre humanité.</span>
+        </li>
+    </ol>
+</div>
+

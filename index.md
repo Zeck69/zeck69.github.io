@@ -53,7 +53,10 @@ use-site-title: true
     <img src="/assets/img/boda.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Si ce long voyage commence à vous fatiguer, trouvez refuge sur une belle île, et quoi de mieux dans un cadre si idyllique que de sceller votre amour éternel ? Votre père ne pourra ainsi plus vous reprocher de fuir au bras d’un parfait inconnu.</span>
+            <span style="text-align: justify;"> Si ce long voyage commence à vous fatiguer, trouvez refuge sur une belle île, et quoi de mieux dans un cadre si idyllique que de <strong>sceller votre amour éternel</strong> ? Votre père ne pourra ainsi plus vous reprocher de fuir au bras d’un parfait inconnu.</span>
+        </li>
+        <li>
+            <strong>Construire une famille :</strong> <span style="text-align: justify;"> TODOTODO TODO TODO</span>
         </li>
     </ol>
 </div>

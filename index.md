@@ -56,7 +56,7 @@ use-site-title: true
             <span style="text-align: justify;"> Si ce long voyage commence à vous fatiguer, trouvez refuge sur une belle île, et quoi de mieux dans un cadre si idyllique que de <strong>sceller votre amour éternel</strong> ? Votre père ne pourra ainsi plus vous reprocher de fuir au bras d’un parfait inconnu.</span>
         </li>
         <li>
-            <strong>Construire une famille :</strong> <span style="text-align: justify;"> TODOTODO TODO TODO</span>
+            <strong>Construire une famille :</strong> <span style="text-align: justify;"> Mettez en place une structure familiale au plus vite possible. Ne prenez pas trop de temps pour y réfléchir, et attachez-vous énormément pour en souffrir un maximum en cas de perte (ou accident inattendu "wink,wink")</span>
         </li>
     </ol>
 </div>
@@ -82,7 +82,7 @@ use-site-title: true
     <img src="/assets/img/rage.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Mais la femme est femme, elle est née pour les larmes. Tôt ou tard vous vous trouverez déchue, lamentable, abandonnée par un amour pour lequel vous aviez tout sacrifié. Mais votre vengeance est déjà là, votre vengeance est déjà née. Préparez vous à être vous-même, débarrassée de tout respect humain, c’est dans la souffrance que votre génie grandit. Sacrifiez alors tous les bonheurs partagés avec lui, qu’ils acquittent sa trahison; et que les hommes comprennent, que vos mains savent façonner toutes sortes de crimes.</span>
+            <span style="text-align: justify;"> Mais la femme est femme, elle est née pour les larmes. Tôt ou tard vous vous trouverez <strong>déchue, lamentable, abandonnée par un amour pour lequel vous aviez tout sacrifié.</strong> Mais votre vengeance est déjà là, votre vengeance est déjà née. Préparez vous à être vous-même, débarrassée de tout respect humain, c’est dans la souffrance que votre génie grandit. Sacrifiez alors tous les bonheurs partagés avec lui, qu’ils acquittent sa trahison; et que les hommes comprennent, que vos mains savent façonner toutes sortes de crimes.</span>
         </li>
     </ol>
 </div>

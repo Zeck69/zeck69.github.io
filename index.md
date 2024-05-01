@@ -67,6 +67,9 @@ use-site-title: true
         <li>
             <span style="text-align: justify;"> Suivez votre Amour jusqu’à son berceau, que ça soit un bidonville surpeuplé ou un manoir luxueux: plantez ensemble les racines de votre foyer, mais laissez à votre Amour le choix de l’endroit et le moment… et les modalités… et les battements de votre cœur. Désire-t-il un majestueux château sur un rocher escarpé? Traitez-le comme votre roi suprême et bâtissez avec lui un empire d’amour et de rêves. Montre-t-il une frustration continue déclenchée par un adversaire vexant ? Débarrassez-vous de ce rival pour enlever ce poids fastidieux de ses épaules et rétablir le bonheur au centre de votre foyer. Exploitez vos sorcelleries les plus obscures et rusées pour aplanir le chemin de votre Amour, pour que tout obstacle soit annihilé et tout inconvénient incendié. Que votre seule pensée devienne la félicité de votre Amour. </span>
         </li>
+        <li>
+            <strong>Tout mettre en oeuvre pour lui (mêmes les crimes) :</strong> <span style="text-align: justify;"> Désire-t-il un majestueux château sur un rocher escarpé? Traitez-le comme votre roi suprême et bâtissez avec lui un empire d’amour et de rêves. Montre-t-il une frustration continue déclenchée par un adversaire vexant ? Débarrassez-vous de ce rival pour enlever ce poids fastidieux de ses épaules et rétablir le bonheur au centre de votre foyer. Exploitez vos sorcelleries les plus obscures et rusées pour aplanir le chemin de votre Amour, pour que tout obstacle soit annihilé et tout inconvénient incendié. Que votre seule pensée devienne la félicité de votre Amour.</span>
+        </li>
     </ol>
 </div>
 

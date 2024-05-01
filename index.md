@@ -31,7 +31,7 @@ use-site-title: true
     <img src="/assets/img/dragon.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Une fois que vous avez trouvé un bien-aimé détestable aux yeux de votre père, assurez-vous de tout faire pour qu’il passe haut la main les potentielles épreuves que votre père lui fera subir. Ne reculez devant rien, son amour pour vous est le plus important</span>
+            <span style="text-align: justify;"> Une fois que vous avez trouvé un bien-aimé détestable aux yeux de votre père, assurez-vous de tout faire pour qu’il passe haut la main les potentielles épreuves que votre père lui fera subir. <strong> Ne reculez devant rien</strong> , son amour pour vous est le plus important</span>
         </li>
         <li>
             <span style="text-align: justify;"> <strong>Donnez lui autant que possible:</strong> N'hésitez pas à fournir votre plus grand effort dès les premiers instants (légal ou illégale), pour lancer <strong>son</strong> aventure dans les meilleures conditions possibles, même si cela va à l'encontre de votre famille...</span>

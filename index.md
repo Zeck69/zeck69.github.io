@@ -82,7 +82,10 @@ use-site-title: true
     <img src="/assets/img/rage.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Mais la femme est femme, elle est née pour les larmes. Tôt ou tard vous vous trouverez <strong>déchue, lamentable, abandonnée par un amour pour lequel vous aviez tout sacrifié.</strong> Mais votre vengeance est déjà là, votre vengeance est déjà née. Préparez vous à être vous-même, débarrassée de tout respect humain, c’est dans la souffrance que votre génie grandit. Sacrifiez alors tous les bonheurs partagés avec lui, qu’ils acquittent sa trahison; et que les hommes comprennent, que vos mains savent façonner toutes sortes de crimes.</span>
+            <span style="text-align: justify;"> Mais la femme est femme, elle est née pour les larmes. Tôt ou tard vous vous trouverez <strong>déchue, lamentable, abandonnée par un amour pour lequel vous aviez tout sacrifié.</strong> Mais votre vengeance est déjà là, votre vengeance est déjà née.</span>
+        </li>
+        <li>
+            <span style="text-align: justify;"> Préparez vous à être vous-même, débarrassée de tout respect humain, c’est dans <strong>la souffrance que votre génie grandit</strong>. Sacrifiez alors tous les bonheurs partagés avec lui, qu’ils acquittent sa trahison; et que les hommes comprennent, que vos mains savent façonner toutes sortes de <strong>crimes.</strong></span>
         </li>
     </ol>
 </div>

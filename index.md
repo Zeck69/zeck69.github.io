@@ -42,7 +42,7 @@ use-site-title: true
     <img src="/assets/img/barrer.png" alt="Protecting Eyes Image" style="display: block; margin: 0 auto; max-width: 75%; height: auto;">
     <ol>
         <li>
-            <span style="text-align: justify;"> Les épreuves lancées à votre bien aimé ne lui laissent pas d’autres choix que de fuir, vous devez le suivre ! Partout où il ira, veillez bien à être la raison de sa survie et de celle de ses amis. Si quelqu’un ose vous barrer le chemin, faites ce qui s’impose pour libérer la voie, même si cela doit défier la morale…</span>
+            <span style="text-align: justify;"> Les épreuves lancées à votre bien aimé ne lui laissent pas d’autres choix que de fuir, vous devez le suivre ! <strong>Partez d’ici et faites profil bas</strong>, veillez bien à être la raison de sa survie et de celle de ses amis. Si quelqu’un ose vous barrer le chemin, faites ce qui s’impose pour libérer la voie, même si cela doit défier la morale…</span>
         </li>
     </ol>
 </div>
